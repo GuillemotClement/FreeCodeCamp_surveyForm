@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Planete Running</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id="title">Planete Running Formulaire d'Enquete</h1>
+        <p id="description">Merci d'avoir pris le temps de remplir notre sondage de satisfaction client. Votre opinion est précieuse pour nous et nous aidera à améliorer nos produits et services.</p>
+        <form id="survey-form" action="#">
+            <fieldset>
+                <label for="name" id="name-label">Nom : 
+                    <input type="text" id="name" placeholder="Clement Blanchatre"required>
+                </label>
+                <label for="email" id="email-label">E-mail : 
+                    <input id="email" type="email" placeholder="adress@mail.com"required/>
+                </label>
+                <label for="number" id="number-label"> Age :
+                    <input id="number" type="number" min="7" max="120" placeholder="27"/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">Comment avez vous decouvert le site ?
+                    <select id="dropdown">
+                        <option value="">(Selectionner un des choix)</option>
+                        <option value="1">Moteur de recherche (Google, Bing, etc.)</option>
+                        <option value="2">Réseaux sociaux (Facebook, Twitter, Instagram, etc.)</option>
+                        <option value="3">Publicité en ligne (bannières, annonces Google AdWords, etc.)</option>
+                        <option value="4">Recommandation d'un ami ou d'un collègue</option>
+                        <option value="5">Newsletter ou email promotionnel</option>
+                        <option value="6">Autre (à préciser)</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend> Comment préférez-vous courir ?</legend>
+                <label for="groupe">
+                    <input type="radio" name="pratique" id="groupe" value="groupe"/> en groupe
+                </label>
+                <label for="solo">
+                    <input type="radio" name="pratique" id="solo" value="solo"/> seul
+                </label>
+                <label for="duo">
+                    <input type="radio" name="pratique" id="duo" value="duo"/> en duo
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="choixMultiple">Quel type de contenu aimeriez-vous voir davantage sur le blog ? (Vous pouvez cocher plusieurs réponses)</label><br>
+                <input type="checkbox" id="choix1" name="choixMultiple" value="Conseils d'entraînement pour les débutants">
+                <label for="choix1">Conseils d'entraînement pour les débutants</label>
+                <input type="checkbox" id="choix2" name="choixMultiple" value="Programmes d'entraînement pour les coureurs avancés">
+                <label for="choix2">Programmes d'entraînement pour les coureurs avancés</label>
+                <input type="checkbox" id="choix3" name="choixMultiple" value="Articles sur la nutrition pour les coureurs">
+                <label for="choix3">Articles sur la nutrition pour les coureurs</label>
+                <input type="checkbox" id="choix4" name="choixMultiple" value="Récits de courses de coureurs célèbres">
+                <label for="choix4">Récits de courses de coureurs célèbres</label>
+                <input type="checkbox" id="choix5" name="choixMultiple" value="Interviews de coureurs professionnels">
+                <label for="choix5">Interviews de coureurs professionnels</label>
+                <input type="checkbox" id="choix6" name="choixMultiple" value="Conseils sur l'équipement de course">
+                <label for="choix6">Conseils sur l'équipement de course</label>
+                <input type="checkbox" id="choix7" name="choixMultiple" value="Articles sur les dernières tendances en matière de course à pied">
+                <label for="choix7">Articles sur les dernières tendances en matière de course à pied</label>
+                <input type="checkbox" id="choix8" name="choixMultiple" value="Reportages sur les courses locales ou internationales">
+                <label for="choix8">Reportages sur les courses locales ou internationales</label>
+            </fieldset>
+            <fieldset>
+                <label for="avis">Avez-vous des commentaires, suggestions ou attentes spécifiques concernant le site et son contenu ? Votre avis est important pour nous et nous permettra d'améliorer notre blog de course à pied.
+                    <textarea id="avis" name="avis" placeholder="Partagez vos commentaires et vos idées pour améliorer notre blog de course à pied !" cols="50" rows="4"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Envoyer" id="submit"/>
+        </form>
+    </body>
+</html>
